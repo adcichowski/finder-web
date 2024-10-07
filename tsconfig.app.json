@@ -16,7 +16,10 @@
     "moduleDetection": "force",
     "noEmit": true,
     "jsx": "preserve",
-
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"] // enables us to use @components/MyComponent
+    },
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
